@@ -28,6 +28,8 @@
   --radius-2xl: calc(var(--radius) + 8px);
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
+  --radius-card: 1.5rem;
+  --radius-pill: 999px;
   --color-ink: var(--ink);
   --color-ink-soft: var(--ink-soft);
   --color-surface: var(--surface);
@@ -190,8 +192,37 @@
 @utility container-x {
   width: 100%;
   margin-inline: auto;
-  max-width: 80rem;
-  padding-inline: 1.5rem;
+  max-width: 78rem;
+  padding-inline: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .container-x {
+    padding-inline: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-x {
+    padding-inline: 2.5rem;
+  }
+}
+
+@utility card-base {
+  border-radius: var(--radius-card);
+  border: 1px solid color-mix(in oklab, var(--border) 75%, transparent);
+  background-color: var(--card);
+  box-shadow: var(--shadow-soft);
+  transition:
+    transform 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.55s ease;
+}
+
+.card-base:hover {
+  transform: translateY(-6px);
+  border-color: color-mix(in oklab, var(--primary) 22%, transparent);
+  box-shadow: var(--shadow-lift);
 }
 
 @keyframes rise-in {

@@ -32,7 +32,7 @@ export function Navbar() {
             : "border-b border-transparent bg-transparent",
         )}
       >
-        <nav className="container-x flex h-20 items-center justify-between">
+        <nav className="container-x flex h-[4.5rem] items-center md:h-20 justify-between">
           <a href="#home" className="flex items-center gap-2.5">
             <span className="grid size-9 place-items-center rounded-xl bg-primary text-primary-foreground shadow-glow">
               <Sparkles className="size-4.5" strokeWidth={2.2} />
@@ -47,7 +47,7 @@ export function Navbar() {
               <li key={link.label}>
                 <a
                   href={link.href}
-                  className="relative rounded-full px-4 py-2 text-[14.5px] font-medium text-ink-soft transition-colors duration-300 hover:text-ink"
+                  className="relative rounded-pill px-4 py-2 text-[14px] font-medium tracking-tight text-ink-soft transition-colors duration-400 hover:bg-muted hover:text-ink"
                 >
                   {link.label}
                 </a>
@@ -58,7 +58,7 @@ export function Navbar() {
           <div className="flex items-center gap-2">
             <a
               href="#contact"
-              className="hidden rounded-full bg-accent-amber px-5 py-2.5 text-[14.5px] font-semibold text-accent-amber-foreground shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lift sm:inline-flex"
+              className="hidden rounded-pill bg-accent-amber px-5 py-2.5 text-[14px] font-semibold tracking-tight text-accent-amber-foreground shadow-soft transition-[transform,box-shadow,filter] duration-500 ease-out hover:-translate-y-0.5 hover:brightness-105 hover:shadow-lift sm:inline-flex"
             >
               Start Project
             </a>
