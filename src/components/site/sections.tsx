@@ -103,7 +103,7 @@ export function Hero() {
         className="pointer-events-none absolute top-72 -left-48 size-[34rem] rounded-full bg-accent-amber/8 blur-3xl"
       />
 
-      <div className="container-x grid items-center gap-16 lg:grid-cols-[1.02fr_1fr] lg:gap-20">
+      <div className="container-x grid items-center gap-16 lg:grid-cols-[1.12fr_1fr] lg:gap-16 xl:gap-20">
         <div>
           <Reveal>
             <Eyebrow>
@@ -112,7 +112,7 @@ export function Hero() {
           </Reveal>
 
           <Reveal delay={90}>
-            <h1 className="mt-8 text-[2.6rem] leading-[1.02] font-semibold tracking-[-0.04em] text-balance text-ink sm:text-[3.5rem] lg:text-[4.35rem]">
+            <h1 className="mt-8 max-w-[13ch] text-[2.6rem] leading-[1.03] font-semibold tracking-[-0.04em] text-ink sm:max-w-[16ch] sm:text-[3.4rem] lg:text-[4rem] xl:text-[4.35rem]">
               Websites That Turn Local Visitors Into{" "}
               <span className="bg-gradient-to-r from-primary to-accent-amber bg-clip-text text-transparent">
                 Paying Customers.
@@ -168,7 +168,7 @@ export function Hero() {
               className="h-full w-full object-cover"
             />
           </div>
-          <div className="absolute -bottom-7 left-2 rounded-card border border-border/60 bg-background/85 px-6 py-4 shadow-lift backdrop-blur-xl sm:left-6">
+          <div className="absolute -bottom-7 left-2 hidden rounded-card sm:block border border-border/60 bg-background/85 px-6 py-4 shadow-lift backdrop-blur-xl sm:left-6">
             <p className="font-display text-[1.75rem] leading-none font-semibold text-ink">+38%</p>
             <p className="mt-1.5 text-[12.5px] tracking-tight text-muted-foreground">
               Average lift in inbound calls
