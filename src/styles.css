@@ -169,6 +169,10 @@
     -webkit-font-smoothing: antialiased;
   }
 
+  section[id] {
+    scroll-margin-top: 6rem;
+  }
+
   body {
     font-family: var(--font-sans);
     letter-spacing: -0.011em;
