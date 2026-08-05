@@ -188,36 +188,42 @@ const projects = [
     category: "Plumbing",
     image: projPlumbing,
     note: "Emergency intent handled in one screen — dispatch number, service proof, instant quote.",
+    url: "https://luxe-plumb-hero.vercel.app",
   },
   {
     name: "Voltix Electrical",
     category: "Electrician",
     image: projElectrician,
     note: "Residential, commercial and industrial split cleanly so every enquiry lands qualified.",
+    url: "https://voltedge-brilliance-khaki.vercel.app",
   },
   {
     name: "Comfort Pro HVAC",
     category: "HVAC",
     image: projHvac,
     note: "A booking panel pinned to the hero turns seasonal demand into scheduled service calls.",
+    url: "https://arcticflow-premier-design.vercel.app",
   },
   {
     name: "Gentle Dental Studio",
     category: "Dental Clinic",
     image: projDental,
     note: "Calm editorial pacing with appointment capture that removes the phone call entirely.",
+    url: "https://smilecraft-studio-project.vercel.app",
   },
   {
     name: "Atelier Hair",
     category: "Luxury Salon",
     image: projSalon,
     note: "Fashion-house typography and stylist-level booking, built for a premium price point.",
+    url: "https://luxeglow-studio-launch.vercel.app",
   },
   {
-    name: "Summit Roofing Co.",
-    category: "Roofing",
+    name: "ClearFlow Plumbing",
+    category: "Plumbing",
     image: projRoofing,
-    note: "High-ticket trust signals up front, free inspection as the single decisive action.",
+    note: "Premium plumbing website with modern design and fast conversion.",
+    url: "https://clearflow-homepage-design.vercel.app",
   },
 ];
 
@@ -234,7 +240,12 @@ export function Portfolio() {
         <div className="mt-16 grid gap-7 sm:grid-cols-2 lg:mt-20 lg:grid-cols-3 lg:gap-8">
           {projects.map((project, i) => (
             <Reveal as="article" key={project.name} delay={i * 70} className="h-full">
-              <a href="#contact" className="group card-base flex h-full flex-col overflow-hidden">
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group card-base flex h-full flex-col overflow-hidden"
+              >
                 <div className="relative overflow-hidden bg-surface">
                   <img
                     src={project.image}
