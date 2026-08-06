@@ -38,7 +38,7 @@ export function Navbar() {
               <Sparkles className="size-4.5" strokeWidth={2.2} />
             </span>
             <span className="font-display text-[17px] font-semibold tracking-tight text-ink">
-              LocalLift <span className="text-muted-foreground">Studio</span>
+              Elevate <span className="text-muted-foreground">Web Studio</span>
             </span>
           </a>
 
@@ -60,7 +60,7 @@ export function Navbar() {
               href="#contact"
               className="hidden rounded-pill bg-accent-amber px-5 py-2.5 text-[14px] font-semibold tracking-tight text-accent-amber-foreground shadow-soft transition-[transform,box-shadow,filter] duration-500 ease-out hover:-translate-y-0.5 hover:brightness-105 hover:shadow-lift sm:inline-flex"
             >
-              Start Project
+              Get Free Quote
             </a>
             <button
               type="button"

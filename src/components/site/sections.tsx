@@ -85,10 +85,10 @@ const ghostCta =
 /* ---------------------------------- Hero --------------------------------- */
 
 const badges = [
-  { icon: BadgeCheck, label: "50+ Businesses Inspired" },
-  { icon: Smartphone, label: "Mobile First" },
-  { icon: Search, label: "SEO Ready" },
-  { icon: Gauge, label: "Fast Loading" },
+  { icon: BadgeCheck, label: "Custom Designed" },
+  { icon: Smartphone, label: "100% Mobile Optimized" },
+  { icon: Search, label: "Built for Local SEO" },
+  { icon: Gauge, label: "Lightning Fast" },
 ];
 
 export function Hero() {
@@ -107,23 +107,19 @@ export function Hero() {
         <div>
           <Reveal>
             <Eyebrow>
-              <Sparkles className="size-3.5" /> Studio for local service brands
+              <Sparkles className="size-3.5" /> Premium Web Design Agency
             </Eyebrow>
           </Reveal>
 
           <Reveal delay={90}>
             <h1 className="mt-8 max-w-[13ch] text-[2.6rem] leading-[1.03] font-semibold tracking-[-0.04em] text-ink sm:max-w-[16ch] sm:text-[3.4rem] lg:text-[4rem] xl:text-[4.35rem]">
-              Websites That Turn Local Visitors Into{" "}
-              <span className="bg-gradient-to-r from-primary to-accent-amber bg-clip-text text-transparent">
-                Paying Customers.
-              </span>
+              Build a Website That Makes Your Business Impossible to Ignore.             
             </h1>
           </Reveal>
 
           <Reveal delay={180}>
             <p className="mt-8 max-w-lg text-[1.0625rem] leading-[1.75] text-ink-soft sm:text-[1.1875rem]">
-              We build premium websites for local businesses that generate more calls, more
-              bookings and more revenue.
+              We design high-converting websites for local businesses across the USA. Fast, modern, mobile-first websites built to attract more customers and grow your business.
             </p>
           </Reveal>
 
@@ -169,9 +165,9 @@ export function Hero() {
             />
           </div>
           <div className="absolute -bottom-7 left-2 hidden rounded-card sm:block border border-border/60 bg-background/85 px-6 py-4 shadow-lift backdrop-blur-xl sm:left-6">
-            <p className="font-display text-[1.75rem] leading-none font-semibold text-ink">+38%</p>
+            <p className="font-display text-[1.75rem] leading-none font-semibold text-ink">100%</p>
             <p className="mt-1.5 text-[12.5px] tracking-tight text-muted-foreground">
-              Average lift in inbound calls
+              Custom Design
             </p>
           </div>
         </Reveal>
@@ -232,9 +228,9 @@ export function Portfolio() {
     <section id="portfolio" className="border-y border-border/60 bg-surface py-28 md:py-44">
       <div className="container-x">
         <SectionHead
-          eyebrow="Selected work"
-          title="Featured Website Projects"
-          lede="Six builds for trades, clinics and studios — each one designed around the single action that pays the bills."
+          eyebrow="Featured Projects"
+          title="Websites Built to Generate More Customers"
+          lede="A collection of premium websites created for local businesses across the United States."
         />
 
         <div className="mt-16 grid gap-7 sm:grid-cols-2 lg:mt-20 lg:grid-cols-3 lg:gap-8">
@@ -385,9 +381,9 @@ const reasons = [
 ];
 
 const stats = [
-  { value: "6+", label: "Premium Templates" },
-  { value: "100%", label: "Responsive" },
-  { value: "90+", label: "Performance Score" },
+  { value: "6+", label: "Projects Built" },
+  { value: "100%", label: "Mobile Friendly" },
+  { value: "90+", label: "Google PageSpeed" },
 ];
 
 export function WhyChoose() {
@@ -395,9 +391,9 @@ export function WhyChoose() {
     <section className="border-y border-border/60 bg-surface py-28 md:py-44">
       <div className="container-x">
         <SectionHead
-          eyebrow="Why LocalLift"
-          title="Built for owners who measure results in booked jobs."
-          lede="Design is the surface. What we are actually engineering is the shortest path between a search and a scheduled appointment."
+          eyebrow="Why Choose Us"
+          title="Premium Websites That Help Local Businesses Grow"
+          lede="Every website is designed to load fast, rank higher, and convert visitors into customers."
         />
 
         <div className="mt-16 grid gap-7 md:grid-cols-2 lg:mt-20 lg:grid-cols-3 lg:gap-8">

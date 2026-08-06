@@ -13,9 +13,10 @@ import {
   Footer,
 } from "@/components/site/sections";
 
-const title = "LocalLift Studio — Premium Websites for Local Businesses";
+const title =
+"Elevate Web Studio | Premium Websites for Local Businesses";
 const description =
-  "LocalLift Studio designs premium, fast websites for plumbers, electricians, HVAC teams, dental clinics, salons and roofers that turn local visitors into paying customers.";
+"Elevate Web Studio builds premium websites for plumbers, electricians, HVAC companies, salons and dental clinics across the USA.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
