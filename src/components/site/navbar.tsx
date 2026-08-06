@@ -60,7 +60,7 @@ export function Navbar() {
               href="#contact"
               className="hidden rounded-pill bg-accent-amber px-5 py-2.5 text-[14px] font-semibold tracking-tight text-accent-amber-foreground shadow-soft transition-[transform,box-shadow,filter] duration-500 ease-out hover:-translate-y-0.5 hover:brightness-105 hover:shadow-lift sm:inline-flex"
             >
-              Get Free Quote
+              Book Free Strategy Call
             </a>
             <button
               type="button"

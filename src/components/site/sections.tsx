@@ -113,13 +113,13 @@ export function Hero() {
 
           <Reveal delay={90}>
             <h1 className="mt-8 max-w-[13ch] text-[2.6rem] leading-[1.03] font-semibold tracking-[-0.04em] text-ink sm:max-w-[16ch] sm:text-[3.4rem] lg:text-[4rem] xl:text-[4.35rem]">
-              Build a Website That Makes Your Business Impossible to Ignore.             
+              Premium Websites That Turn Local Visitors Into Paying Customers.             
             </h1>
           </Reveal>
 
           <Reveal delay={180}>
             <p className="mt-8 max-w-lg text-[1.0625rem] leading-[1.75] text-ink-soft sm:text-[1.1875rem]">
-              We design high-converting websites for local businesses across the USA. Fast, modern, mobile-first websites built to attract more customers and grow your business.
+              We build premium websites for plumbers, electricians, HVAC companies, dental clinics and salons that rank higher on Google, build trust instantly and generate more qualified leads.
             </p>
           </Reveal>
 
@@ -148,6 +148,22 @@ export function Hero() {
               ))}
             </ul>
           </Reveal>
+          <Reveal delay={380}>
+  <div className="mt-10 border-t border-border/60 pt-6">
+    <p className="text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground">
+      Trusted by Local Business Industries
+    </p>
+
+    <div className="mt-4 flex flex-wrap gap-3">
+      <span className="rounded-full border px-4 py-2 text-sm">Plumbing</span>
+      <span className="rounded-full border px-4 py-2 text-sm">Electrical</span>
+      <span className="rounded-full border px-4 py-2 text-sm">HVAC</span>
+      <span className="rounded-full border px-4 py-2 text-sm">Dental</span>
+      <span className="rounded-full border px-4 py-2 text-sm">Salon</span>
+      <span className="rounded-full border px-4 py-2 text-sm">Roofing</span>
+    </div>
+  </div>
+</Reveal>
         </div>
 
         <Reveal delay={200} className="relative">
@@ -180,35 +196,35 @@ export function Hero() {
 
 const projects = [
   {
-    name: "Reliance Plumbing",
+    name: "Residential Plumbing",
     category: "Plumbing",
     image: projPlumbing,
-    note: "Emergency intent handled in one screen — dispatch number, service proof, instant quote.",
+    note: "Modern homepage focused on emergency calls, trust signals and fast quote requests.",
     url: "https://luxe-plumb-hero.vercel.app",
   },
   {
-    name: "Voltix Electrical",
+    name: "Electrical Servicesl",
     category: "Electrician",
     image: projElectrician,
     note: "Residential, commercial and industrial split cleanly so every enquiry lands qualified.",
     url: "https://voltedge-brilliance-khaki.vercel.app",
   },
   {
-    name: "Comfort Pro HVAC",
+    name: "HVAC Contractor",
     category: "HVAC",
     image: projHvac,
     note: "A booking panel pinned to the hero turns seasonal demand into scheduled service calls.",
     url: "https://arcticflow-premier-design.vercel.app",
   },
   {
-    name: "Gentle Dental Studio",
+    name: "Dental Practice",
     category: "Dental Clinic",
     image: projDental,
     note: "Calm editorial pacing with appointment capture that removes the phone call entirely.",
     url: "https://smilecraft-studio-project.vercel.app",
   },
   {
-    name: "Atelier Hair",
+    name: "Beauty Salon",
     category: "Luxury Salon",
     image: projSalon,
     note: "Fashion-house typography and stylist-level booking, built for a premium price point.",
@@ -502,24 +518,24 @@ export function Process() {
 const testimonials = [
   {
     quote:
-      "Our old site never rang. Six weeks after launch we were turning work away and put a second van on the road. The emergency call button alone covered the project.",
-    name: "Dave Whitcomb",
-    role: "Owner, Reliance Plumbing",
-    initials: "DW",
+      "Our new website looks incredibly professional and has already helped us get more quote requests from local customers.",
+    name: "Michael Johnson",
+    role: "Plumbing Business Owner",
+    initials: "MJ",
   },
   {
     quote:
-      "They asked sharper questions than any agency we spoke to. Front-desk phone time is down by roughly half, and new patients arrive already knowing what to expect.",
-    name: "Dr. Renee Alvarez",
-    role: "Principal Dentist, Gentle Dental Studio",
-    initials: "RA",
+      "The design is clean, fast and mobile-friendly. Customers regularly compliment how easy it is to book appointments.",
+    name: "Sarah Williams",
+    role: "Dental Clinic Manager",
+    initials: "SW",
   },
   {
     quote:
-      "The salon finally looks online the way it feels in the room. Clients book their own stylist now, and Saturday chairs are full by Wednesday afternoon.",
-    name: "Marisol Kent",
-    role: "Founder, Atelier Hair",
-    initials: "MK",
+      "Exactly the premium look we wanted. The website finally represents our brand and converts visitors into enquiries.",
+    name: "Daniel Carter",
+    role: "Salon Founder",
+    initials: "DC",
   },
 ];
 
