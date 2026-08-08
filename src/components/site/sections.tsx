@@ -32,12 +32,12 @@ import {
 } from "@/components/ui/accordion";
 import { Reveal } from "./reveal";
 
-import heroLaptop from "@/assets/hero-laptop.jpg";
-import projPlumbing from "@/assets/proj-plumbing.jpg";
-import projElectrician from "@/assets/proj-electrician.jpg";
-import projHvac from "@/assets/proj-hvac.jpg";
-import projDental from "@/assets/proj-dental.jpg";
-import projSalon from "@/assets/proj-salon.jpg";
+import heroLaptopp from "@/assets/hero-laptopp.png";
+import projPlumbing1 from "@/assets/proj-plumbing1.png";
+import projVoltedgee from "@/assets/proj-voltedgee.jpg";
+import projHvacc from "@/assets/proj-hvacc.jpg";
+import projDentall from "@/assets/proj-dentall.png";
+import projSalonn from "@/assets/proj-salonn.png";
 import projPlumbingg from "@/assets/proj-plumbingg.jpg.png";
 
 /* ------------------------------ shared atoms ------------------------------ */
@@ -173,7 +173,7 @@ export function Hero() {
           />
           <div className="relative overflow-hidden rounded-card border border-border/60 bg-surface shadow-lift">
             <img
-              src={heroLaptop}
+              src={heroLaptopp}
               alt="Laptop displaying a premium plumbing company website built by LocalLift Studio"
               width={1408}
               height={1008}
@@ -198,35 +198,35 @@ const projects = [
   {
     name: "Residential Plumbing",
     category: "Plumbing",
-    image: projPlumbing,
+    image: projPlumbing1,
     note: "Modern homepage focused on emergency calls, trust signals and fast quote requests.",
     url: "https://luxe-plumb-hero.vercel.app",
   },
   {
     name: "Electrical Servicesl",
     category: "Electrician",
-    image: projElectrician,
+    image: projVoltedgee,
     note: "Residential, commercial and industrial split cleanly so every enquiry lands qualified.",
     url: "https://voltedge-brilliance-khaki.vercel.app",
   },
   {
     name: "HVAC Contractor",
     category: "HVAC",
-    image: projHvac,
+    image: projHvacc,
     note: "A booking panel pinned to the hero turns seasonal demand into scheduled service calls.",
     url: "https://arcticflow-premier-design.vercel.app",
   },
   {
     name: "Dental Practice",
     category: "Dental Clinic",
-    image: projDental,
+    image: projDentall,
     note: "Calm editorial pacing with appointment capture that removes the phone call entirely.",
     url: "https://smilecraft-studio-project.vercel.app",
   },
   {
     name: "Beauty Salon",
     category: "Luxury Salon",
-    image: projSalon,
+    image: projSalonn,
     note: "Fashion-house typography and stylist-level booking, built for a premium price point.",
     url: "https://luxeglow-studio-launch.vercel.app",
   },
@@ -234,7 +234,7 @@ const projects = [
     name: "ClearFlow Plumbing & HVAC",
     category: "Plumbing & HVAC",
     image: projPlumbingg,
-    note: "Premium plumbing website with modern design and fast conversion.",
+    note: "Premium plumbing & hvac website with modern design and fast conversion.",
     url: "https://clearflow-homepage-design.vercel.app",
   },
 ];
