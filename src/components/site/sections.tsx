@@ -834,7 +834,7 @@ export function FinalCta() {
                 href="mailto:hello@localliftstudio.com?subject=New%20project%20enquiry"
                 className="group inline-flex items-center justify-center gap-2 rounded-pill bg-accent-amber px-8 py-4 text-[15px] font-semibold text-accent-amber-foreground transition-[transform,filter] duration-500 hover:-translate-y-1 hover:brightness-105"
               >
-                Get Started →
+                Get Started
                 <ArrowRight className="size-4 transition-transform duration-500 group-hover:translate-x-1" />
               </a>
               <a
