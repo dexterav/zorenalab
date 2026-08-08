@@ -38,7 +38,7 @@ import projElectrician from "@/assets/proj-electrician.jpg";
 import projHvac from "@/assets/proj-hvac.jpg";
 import projDental from "@/assets/proj-dental.jpg";
 import projSalon from "@/assets/proj-salon.jpg";
-import projRoofing from "@/assets/proj-roofing.jpg";
+import projPlumbingg from "@/assets/proj-plumbingg.jpg.png";
 
 /* ------------------------------ shared atoms ------------------------------ */
 
@@ -231,9 +231,9 @@ const projects = [
     url: "https://luxeglow-studio-launch.vercel.app",
   },
   {
-    name: "ClearFlow Plumbing",
-    category: "Plumbing",
-    image: projRoofing,
+    name: "ClearFlow Plumbing & HVAC",
+    category: "Plumbing & HVAC",
+    image: projPlumbingg,
     note: "Premium plumbing website with modern design and fast conversion.",
     url: "https://clearflow-homepage-design.vercel.app",
   },
