@@ -587,38 +587,44 @@ export function Testimonials() {
 const plans = [
   {
     name: "Starter",
-    tagline: "For a single-van trade or new clinic getting online properly for the first time.",
+    tagline: "For small local businesses getting online with a professional website.",
     features: [
-      "Up to 4 crafted pages",
-      "Mobile-first responsive build",
-      "Click-to-call and enquiry capture",
-      "Google Business profile setup",
-      "Live in roughly two weeks",
+      "1–3 crafted pages",
+      "Mobile-first responsive design",
+      "Click-to-call & enquiry buttons",
+      "Basic local SEO",
+      "Contact form",
+      "Delivered in about 3 days",
     ],
     featured: false,
   },
   {
     name: "Professional",
-    tagline: "For established local businesses competing seriously on local search.",
+    tagline: "For local businesses ready to look more professional and get more enquiries.",
     features: [
-      "Up to 10 pages including service areas",
-      "Local SEO and schema architecture",
-      "Booking or quote funnel",
-      "Core Web Vitals performance tuning",
-      "Copywriting for every page",
-      "60 days of post-launch support",
+      "Up to 5–7 custom pages",
+      "Premium custom design",
+      "Mobile-first responsive build",
+      "Local SEO basics",
+      "Quote / enquiry form",
+      "Call & booking integration",
+      "Performance optimization",
+      "30 days post-launch support",
     ],
     featured: true,
   },
   {
-    name: "Custom",
-    tagline: "For multi-location groups, franchises and operators running several brands.",
+    name: "Business",
+    tagline: "For businesses that need a complete online presence with advanced features.",
     features: [
-      "Unlimited pages and locations",
-      "CRM, dispatch and payment integrations",
-      "Multi-location SEO architecture",
-      "Managed hosting and maintenance",
-      "Dedicated account lead",
+      "Up to 10 pages",
+      "Advanced custom design",
+      "Booking / quote system",
+      "Local SEO setup",
+      "Google Business optimization",
+      "Analytics integration",
+      "Performance optimization",
+      "60 days post-launch support",
     ],
     featured: false,
   },
@@ -629,9 +635,9 @@ export function Pricing() {
     <section id="pricing" className="py-28 md:py-44">
       <div className="container-x">
         <SectionHead
-          eyebrow="Engagements"
-          title="Scoped to your business, quoted within 48 hours."
-          lede="We price on scope rather than a menu. Tell us the goal and you get a fixed quote with a firm launch date."
+          eyebrow="Website Packages"
+          title="Professional websites. Simple, transparent pricing."
+          lede="Choose a package that fits your business. Every website is designed to look professional, work on every device, and help you turn visitors into customers."
         />
 
         <div className="mt-16 grid gap-7 lg:mt-20 lg:grid-cols-3 lg:items-stretch lg:gap-8">
@@ -658,6 +664,28 @@ export function Pricing() {
                 >
                   {plan.name}
                 </h3>
+                <div
+  className={
+    plan.featured
+      ? "mt-5 font-display text-[2.4rem] font-semibold tracking-tight text-background"
+      : "mt-5 font-display text-[2.4rem] font-semibold tracking-tight text-ink"
+  }
+>
+  {plan.name === "Starter"
+    ? "$299"
+    : plan.name === "Professional"
+      ? "$499"
+      : "$799"}
+  <span
+    className={
+      plan.featured
+        ? "ml-1 text-[13px] font-medium text-background/55"
+        : "ml-1 text-[13px] font-medium text-ink-soft"
+    }
+  >
+    starting
+  </span>
+</div>
                 <p
                   className={
                     plan.featured
@@ -704,7 +732,7 @@ export function Pricing() {
                       : "group mt-10 inline-flex items-center justify-center gap-2 rounded-pill border border-border bg-background px-6 py-4 text-[15px] font-semibold text-ink transition-all duration-500 hover:-translate-y-0.5 hover:border-primary/30 hover:text-primary"
                   }
                 >
-                  Request Quote
+                  {plan.name === "Starter" ? "Get Started" : "Request Quote"}
                   <ArrowRight className="size-4 transition-transform duration-500 group-hover:translate-x-1" />
                 </a>
               </div>
@@ -792,28 +820,28 @@ export function FinalCta() {
           />
           <div className="relative">
             <span className="inline-flex items-center gap-2 rounded-pill border border-background/15 px-4 py-1.5 text-[11.5px] font-semibold tracking-[0.2em] text-background/65 uppercase">
-              Two slots left this quarter
+              LOCAL BUSINESS WEBSITES
             </span>
             <h2 className="mx-auto mt-9 max-w-3xl text-[2.35rem] leading-[1.03] font-semibold tracking-[-0.04em] text-balance text-background sm:text-[3.25rem] md:text-[3.9rem]">
-              Ready to Grow Your Business?
+              Ready to Build a Better Website?
             </h2>
             <p className="mx-auto mt-7 max-w-lg text-[1.0625rem] leading-[1.75] text-background/65 sm:text-lg">
-              Tell us what the business needs to book next quarter. You get a plan, a fixed quote
-              and a launch date — no retainer talk, no pressure.
+              Tell us about your business and what you need. We'll recommend the right package and
+              get your project moving — simple, transparent and no pressure.
             </p>
             <div className="mt-12 flex flex-col items-stretch justify-center gap-2 sm:flex-row sm:items-center">
               <a
                 href="mailto:hello@localliftstudio.com?subject=New%20project%20enquiry"
                 className="group inline-flex items-center justify-center gap-2 rounded-pill bg-accent-amber px-8 py-4 text-[15px] font-semibold text-accent-amber-foreground transition-[transform,filter] duration-500 hover:-translate-y-1 hover:brightness-105"
               >
-                Start Your Project
+                Get Started →
                 <ArrowRight className="size-4 transition-transform duration-500 group-hover:translate-x-1" />
               </a>
               <a
                 href="mailto:hello@localliftstudio.com?subject=Free%20consultation"
                 className="inline-flex items-center justify-center rounded-pill px-8 py-4 text-[15px] font-semibold text-background/80 transition-colors duration-500 hover:text-background"
               >
-                Book Free Consultation
+                View Pricing
               </a>
             </div>
           </div>
