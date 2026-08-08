@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import { Menu, X, Sparkles } from "lucide-react";
+import { Menu, X, } from "lucide-react";
 import { cn } from "@/lib/utils";
+import zorenaLogo from "@/assets/zorena-logo.png";
 
 const links = [
   { label: "Home", href: "#home" },
@@ -34,11 +35,13 @@ export function Navbar() {
       >
         <nav className="container-x flex h-[4.5rem] items-center md:h-20 justify-between">
           <a href="#home" className="flex items-center gap-2.5">
-            <span className="grid size-9 place-items-center rounded-xl bg-primary text-primary-foreground shadow-glow">
-              <Sparkles className="size-4.5" strokeWidth={2.2} />
-            </span>
+            <img
+              src={zorenaLogo}
+              alt="Zorena Lab"
+              className="size-9 rounded-full object-cover"
+            />
             <span className="font-display text-[17px] font-semibold tracking-tight text-ink">
-              Elevate <span className="text-muted-foreground">Web Studio</span>
+              Zorena <span className="text-muted-foreground">Lab</span>
             </span>
           </a>
 

@@ -14,9 +14,9 @@ import {
 } from "@/components/site/sections";
 
 const title =
-"Elevate Web Studio | Premium Websites for Local Businesses";
+"Zorena Lab | Premium Websites for Local Businesses";
 const description =
-"Elevate Web Studio builds premium websites for plumbers, electricians, HVAC companies, salons and dental clinics across the USA.";
+"Zorena Lab builds premium websites for plumbers, electricians, HVAC companies, salons and dental clinics across the USA.";
 
 export const Route = createFileRoute("/")({
   head: () => ({

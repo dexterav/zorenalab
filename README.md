@@ -1,8 +1,8 @@
-# LocalLift Studio Showcase
+# Zorena Lab Showcase
 
 Act as an award-winning UI/UX designer from a world-class digital agency.
 
-Create a premium one-page agency website for "LocalLift Studio".
+Create a premium one-page agency website for "Zorena Lab".
 
 This website should look like a $20,000 agency website.
 
@@ -78,7 +78,7 @@ NAVIGATION
 
 Logo
 
-LocalLift Studio
+Zorena Lab
 
 Menu
 
@@ -190,7 +190,7 @@ Hosting & Maintenance
 
 SECTION 4
 
-Why Choose LocalLift
+Why Choose Zorena
 
 Cards
 
@@ -334,7 +334,7 @@ No generic AI copy.
 
 This project was built with [Lovable](https://lovable.dev).
 
-**Live app**: https://localboost-elevate.lovable.app
+**Live app**: https://localboost-Zorena Lab.lovable.app
 
 ## Build with Lovable
 

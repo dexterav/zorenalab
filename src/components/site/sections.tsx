@@ -24,6 +24,7 @@ import {
   Linkedin,
   Facebook,
 } from "lucide-react";
+const WHATSAPP_NUMBER = "919508143343";
 import {
   Accordion,
   AccordionContent,
@@ -39,6 +40,7 @@ import projHvacc from "@/assets/proj-hvacc.jpg";
 import projDentall from "@/assets/proj-dentall.png";
 import projSalonn from "@/assets/proj-salonn.png";
 import projPlumbingg from "@/assets/proj-plumbingg.jpg.png";
+import zorenaLogo from "@/assets/zorena-logo.png";
 
 /* ------------------------------ shared atoms ------------------------------ */
 
@@ -107,7 +109,7 @@ export function Hero() {
         <div>
           <Reveal>
             <Eyebrow>
-              <Sparkles className="size-3.5" /> Premium Web Design Agency
+               Premium Web Design Agency
             </Eyebrow>
           </Reveal>
 
@@ -174,7 +176,7 @@ export function Hero() {
           <div className="relative overflow-hidden rounded-card border border-border/60 bg-surface shadow-lift">
             <img
               src={heroLaptopp}
-              alt="Laptop displaying a premium plumbing company website built by LocalLift Studio"
+              alt="Laptop displaying a premium plumbing company website built by Zorena Lab"
               width={1408}
               height={1008}
               className="h-full w-full object-cover"
@@ -261,7 +263,7 @@ export function Portfolio() {
                 <div className="relative overflow-hidden bg-surface">
                   <img
                     src={project.image}
-                    alt={`${project.name} website designed by LocalLift Studio`}
+                    alt={`${project.name} website designed by Zorena Lab`}
                     loading="lazy"
                     width={1200}
                     height={912}
@@ -732,7 +734,7 @@ export function Pricing() {
                       : "group mt-10 inline-flex items-center justify-center gap-2 rounded-pill border border-border bg-background px-6 py-4 text-[15px] font-semibold text-ink transition-all duration-500 hover:-translate-y-0.5 hover:border-primary/30 hover:text-primary"
                   }
                 >
-                  {plan.name === "Starter" ? "Get Started" : "Request Quote"}
+                  {plan.name === "Starter" ? "Get Started" : "Get Started"}
                   <ArrowRight className="size-4 transition-transform duration-500 group-hover:translate-x-1" />
                 </a>
               </div>
@@ -831,14 +833,14 @@ export function FinalCta() {
             </p>
             <div className="mt-12 flex flex-col items-stretch justify-center gap-2 sm:flex-row sm:items-center">
               <a
-                href="mailto:hello@localliftstudio.com?subject=New%20project%20enquiry"
+                href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hi%20Zorena%20Lab%20,%20I%27m%20interested%20in%20getting%20a%20website%20for%20my%20business.`}
                 className="group inline-flex items-center justify-center gap-2 rounded-pill bg-accent-amber px-8 py-4 text-[15px] font-semibold text-accent-amber-foreground transition-[transform,filter] duration-500 hover:-translate-y-1 hover:brightness-105"
               >
                 Get Started
                 <ArrowRight className="size-4 transition-transform duration-500 group-hover:translate-x-1" />
               </a>
               <a
-                href="mailto:hello@localliftstudio.com?subject=Free%20consultation"
+                href="#pricing"
                 className="inline-flex items-center justify-center rounded-pill px-8 py-4 text-[15px] font-semibold text-background/80 transition-colors duration-500 hover:text-background"
               >
                 View Pricing
@@ -861,10 +863,14 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-2.5">
               <span className="grid size-9 place-items-center rounded-xl bg-primary text-primary-foreground">
-                <Sparkles className="size-4.5" strokeWidth={2.2} />
+                <img
+                  src={zorenaLogo}
+                  alt="Zorena Lab"
+                  className="size-9 rounded-full object-cover"
+                />
               </span>
               <span className="font-display text-[17px] font-semibold tracking-tight text-ink">
-                LocalLift Studio
+                Zorena Lab
               </span>
             </div>
             <p className="mt-6 max-w-xs text-[14.5px] leading-[1.75] text-ink-soft">
@@ -909,7 +915,7 @@ export function Footer() {
               Portfolio
             </h3>
             <ul className="mt-6 space-y-3.5 text-[14.5px] text-ink-soft">
-              {["Plumbing", "HVAC", "Dental Clinic", "Roofing"].map((s) => (
+              {["Plumbing", "HVAC", "Dental Clinic", "Salon"].map((s) => (
                 <li key={s}>
                   <a
                     href="#portfolio"
@@ -929,26 +935,31 @@ export function Footer() {
             <ul className="mt-6 space-y-3.5 text-[14.5px] text-ink-soft">
               <li>
                 <a
-                  href="mailto:hello@localliftstudio.com"
+                  href="mailto:hello@Zorenastudio.com"
                   className="inline-flex items-center gap-2 transition-colors duration-400 hover:text-primary"
                 >
-                  <Mail className="size-4 shrink-0" /> hello@localliftstudio.com
+                  <Mail className="size-4 shrink-0" /> hello@Zorenastudio.com
                 </a>
               </li>
               <li className="inline-flex items-center gap-2">
                 <MapPin className="size-4 shrink-0" /> Remote — serving North America
               </li>
-              <li>
-                <a href="#pricing" className="transition-colors duration-400 hover:text-primary">
-                  Request a quote
-                </a>
-              </li>
+<li>
+  <a
+    href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hi%20Zorena%20Lab%20,%20I%27d%20like%20to%20discuss%20a%20website%20for%20my%20business.`}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-2 transition-colors duration-400 hover:text-primary"
+  >
+    WhatsApp Us
+  </a>
+</li>
             </ul>
           </div>
         </div>
 
         <div className="mt-16 flex flex-col gap-3 border-t border-border/70 pt-8 text-[13px] text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} LocalLift Studio. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Zorena Lab. All rights reserved.</p>
           <p>Designed &amp; built in-house.</p>
         </div>
       </div>
