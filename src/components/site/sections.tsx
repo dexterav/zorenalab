@@ -935,10 +935,10 @@ export function Footer() {
             <ul className="mt-6 space-y-3.5 text-[14.5px] text-ink-soft">
               <li>
                 <a
-                  href="mailto:hello@Zorenastudio.com"
+                  href="mailto:dexterabhi1212@gmail.com"
                   className="inline-flex items-center gap-2 transition-colors duration-400 hover:text-primary"
                 >
-                  <Mail className="size-4 shrink-0" /> hello@Zorenastudio.com
+                  <Mail className="size-4 shrink-0" /> dexterabhi1212@gmail.com
                 </a>
               </li>
               <li className="inline-flex items-center gap-2">
