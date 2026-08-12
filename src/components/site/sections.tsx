@@ -20,9 +20,7 @@ import {
   PenTool,
   Code2,
   Compass,
-  Instagram,
   Linkedin,
-  Facebook,
 } from "lucide-react";
 const WHATSAPP_NUMBER = "919508143343";
 import {
@@ -878,20 +876,15 @@ export function Footer() {
               clinics, salons and roofers who want the phone to ring.
             </p>
             <div className="mt-7 flex gap-2">
-              {[
-                { Icon: Instagram, label: "Instagram" },
-                { Icon: Linkedin, label: "LinkedIn" },
-                { Icon: Facebook, label: "Facebook" },
-              ].map(({ Icon, label }) => (
-                <a
-                  key={label}
-                  href="#home"
-                  aria-label={label}
-                  className="grid size-10 place-items-center rounded-full border border-border text-ink-soft transition-all duration-500 hover:-translate-y-1 hover:border-primary/30 hover:text-primary"
-                >
-                  <Icon className="size-4" />
-                </a>
-              ))}
+              <a
+                href="https://www.linkedin.com/company/zorenalab/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="grid size-10 place-items-center rounded-full border border-border text-ink-soft transition-all duration-500 hover:-translate-y-1 hover:border-primary/30 hover:text-primary"
+              >
+                <Linkedin className="size-4" />
+              </a>
             </div>
           </div>
 
@@ -935,10 +928,10 @@ export function Footer() {
             <ul className="mt-6 space-y-3.5 text-[14.5px] text-ink-soft">
               <li>
                 <a
-                  href="mailto:dexterabhi1212@gmail.com"
+                  href="mailto:hellozorenalab@gmail.com"
                   className="inline-flex items-center gap-2 transition-colors duration-400 hover:text-primary"
                 >
-                  <Mail className="size-4 shrink-0" /> dexterabhi1212@gmail.com
+                  <Mail className="size-4 shrink-0" /> hellozorenalab@gmail.com
                 </a>
               </li>
               <li className="inline-flex items-center gap-2">
